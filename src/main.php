@@ -7,7 +7,7 @@ use pocketmine\Server;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
 
-class Main extends PluginBase {
+class Main extends PluginBase implements listener{
 
   public function onEnable(){
     $this->getLogger()->info("Ranks Enabled");
