@@ -6,27 +6,12 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
-use pocketmine\event\PlayerQuitEvent;
-use pocketmine\event\PlayerJoinEvent;
 
 class Main extends PluginBase implements listener{
   public function onEnable(){
     $this->getLogger()->info("Ranks Enabled");
     $this->getServer()->getPluginManager()->registerEvents($this ,$this);
   }
-  
-  public function onJoin(PlayerJoinEvent $event){
-		$config = $this->getConfig();
-		#$event->setJoinMessage(""); //This could be useful in the future!
-		$player = $event->getPlayer();
-		$this->setRank($player);
-	}
-	
-	public function onQuit(PlayerQuitEvent $event){
-		$config = $this->getConfig();
-		#$event->setQuitMessage(""); //This could be useful in the future!
-		$player = $event->getPlayer();
-	}
   
   public function setRank(Player $player){
 		$ranksyml = new Config($this->getDataFolder()."/ranks.yml", Config::YAML);
