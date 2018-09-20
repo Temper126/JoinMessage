@@ -6,6 +6,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
+use pocketmine\event\PlayerQuitEvent;
+use pocketmine\event\PlayerJoinEvent;
 
 class Main extends PluginBase implements listener{
   public function onEnable(){
