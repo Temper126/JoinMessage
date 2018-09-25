@@ -1,2 +1,2 @@
-# Ranks
-A Ranks plugin for RefluxNetwork
+#JoinMessage
+A JoinMessage plugin!
