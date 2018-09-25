@@ -1,5 +1,5 @@
-name: Ranks
-main: Ranks\Main
+name: JoinMessage
+main: JoinMessage\Main
 version: 1.0
 api: [3.0.0, 3.2.0]
 author: TeMp3r126
