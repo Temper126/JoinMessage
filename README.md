@@ -1,2 +1,1 @@
-#JoinMessage
 A JoinMessage plugin!
